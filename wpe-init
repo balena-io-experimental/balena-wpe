@@ -8,4 +8,6 @@ export WAYLAND_DISPLAY=wayland-0
 
 westeros-init &
 
+URL=${URL:-"http://www.nyan.cat/original"}
+
 WPELauncher $URL

@@ -22,7 +22,7 @@ We also need to set the HDMI resolution because the WPE project is currently har
 ## Setting the URL
 
 To configure the URL displayed by webkit, set the URL environment variable. The
-default value is `https://youtube.com/tv`
+default value is [http://www.nyan.cat/original](http://www.nyan.cat/original)
 
 ## Using PiTFT
 
@@ -32,4 +32,4 @@ framebuffer there.
 
 * `RESIN_HOST_CONFIG_dtoverlay`=`pitft28-capacitive,rotate=90,speed=62000000,fps=60`
 
-![PiTFT picture](http://i.imgur.com/LJk9Hl5.jpg)
+![PiTFT picture](http://i.imgur.com/VaIPJ0L.jpg)

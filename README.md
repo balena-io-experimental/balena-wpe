@@ -31,3 +31,5 @@ overlays for it and this project will automatically attempt to copy the
 framebuffer there.
 
 * `RESIN_HOST_CONFIG_dtoverlay`=`pitft28-capacitive,rotate=90,speed=62000000,fps=60`
+
+![PiTFT picture](http://i.imgur.com/LJk9Hl5.jpg)

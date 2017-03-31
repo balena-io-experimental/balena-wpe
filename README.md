@@ -1,5 +1,7 @@
 # resin-wpe
 
+![pitft](https://github.com/resin-io-playground/resin-wpe/raw/master/pitft.gif)
+
 Example project running a fullscreen browser with hardware accelerated CSS,
 WebGL, and HTML5 video for the RaspberryPi 3.
 

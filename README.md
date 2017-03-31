@@ -13,6 +13,12 @@ will not be able to initialise. You can do this by setting a [fleet configuratio
 
 * `RESIN_HOST_CONFIG_gpu_mem=256`
 
+We also need to set the HDMI resolution because the WPE project is currently hardcoded to display at 720p.
+
+* `RESIN_HOST_CONFIG_force_hotplug=1`
+* `RESIN_HOST_CONFIG_hdmi_group=1`
+* `RESIN_HOST_CONFIG_hdmi_mode=4`
+
 ## Setting the URL
 
 To configure the URL displayed by webkit, set the URL environment variable. The
@@ -24,4 +30,4 @@ If you want to display the output to PiTFT, make sure you enable the dtb
 overlays for it and this project will automatically attempt to copy the
 framebuffer there.
 
-* `RESIN_HOST_CONFIG_dtoverlay`=`pitft28-capacitive,rotate=90,speed=80000000,fps=100`
+* `RESIN_HOST_CONFIG_dtoverlay`=`pitft28-capacitive,rotate=90,speed=62000000,fps=60`

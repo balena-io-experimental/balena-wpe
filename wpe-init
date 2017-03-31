@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Copy to PiTFT if available
+fbcp &
+
+export XDG_RUNTIME_DIR=/run
+export WAYLAND_DISPLAY=wayland-0
+
+westeros-init &
+
+WPELauncher $URL

@@ -1,0 +1,28 @@
+From 18097b64d86aed30f2086546d1b5816413f967b5 Mon Sep 17 00:00:00 2001
+From: Petros Angelatos <petrosagg@gmail.com>
+Date: Fri, 17 Mar 2017 19:07:28 +0100
+Subject: [PATCH] Use system lib directory
+
+Signed-off-by: Petros Angelatos <petrosagg@gmail.com>
+---
+ CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6202553..f4df531 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -7,8 +7,8 @@ include_directories(/opt/vc/include/interface/vcos/pthreads)
+ include_directories(/opt/vc/include/interface/vmcs_host)
+ include_directories(/opt/vc/include/interface/vmcs_host/linux)
+ 
+-link_directories(/opt/vc/lib)
++link_directories(/usr/lib)
+ 
+ add_executable(fbcp main.c)
+ 
+-target_link_libraries(fbcp bcm_host)
++target_link_libraries(fbcp bcm_host vchostif)
+-- 
+2.12.0
+

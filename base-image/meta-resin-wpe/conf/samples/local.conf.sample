@@ -1,0 +1,24 @@
+# Supported machines
+#MACHINE ?= "raspberrypi"
+#MACHINE ?= "raspberrypi2"
+#MACHINE ?= "raspberrypi3"
+
+PREFERRED_PROVIDER_virtual/kernel_forcevariable = "linux-dummy"
+
+# Parallelism Options
+BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()}"
+PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()}"
+
+# Remove the old image before the new one is generated to save disk space when RM_OLD_IMAGE is set to 1, this is an easy way to keep the DEPLOY_DIR_IMAGE clean.
+RM_OLD_IMAGE = "1"
+
+# Package Management configuration
+PACKAGE_CLASSES ?= "package_ipk"
+
+# Additional image features
+USER_CLASSES ?= "buildstats image-mklibs image-prelink"
+
+# By default disable interactive patch resolution (tasks will just fail instead):
+PATCHRESOLVE = "noop"
+
+CONF_VERSION = "1"

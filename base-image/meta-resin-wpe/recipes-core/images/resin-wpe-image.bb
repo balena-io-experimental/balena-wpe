@@ -17,6 +17,4 @@ IMAGE_INSTALL_append += " \
 	wpewebkit \
 	"
 
-PREFERRED_PROVIDER_virtual/kernel_forcevariable = "linux-dummy"
-
 VIRTUAL-RUNTIME_init_manager="busybox"

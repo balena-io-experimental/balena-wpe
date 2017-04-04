@@ -9,6 +9,7 @@ IMAGE_INSTALL_append += " \
 	fontconfig \
 	fontconfig-utils \
 	tslib-calibrate \
+	tslib-tests \
 	ttf-bitstream-vera \
 	wpebackend \
 	wpebackend-rdk \

@@ -1,0 +1,15 @@
+[submodule "base-image/meta-openembedded"]
+	path = base-image/meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
+	branch = morty
+[submodule "base-image/poky"]
+	path = base-image/poky
+	url = git://git.yoctoproject.org/poky
+	branch = morty
+[submodule "base-image/meta-wpe"]
+	path = base-image/meta-wpe
+	url = https://github.com/WebPlatformForEmbedded/meta-wpe
+[submodule "base-image/meta-raspberrypi"]
+	path = base-image/meta-raspberrypi
+	url = git://git.yoctoproject.org/meta-raspberrypi
+	branch = morty

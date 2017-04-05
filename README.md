@@ -7,7 +7,7 @@ accelerated CSS, WebGL, and HTML5 video.
 
 ## Showcase
 
-* Rendenring WebGL [abstract shapes](https://mrdoob.neocities.org/023/)
+* Rendering WebGL [abstract shapes](https://mrdoob.neocities.org/023/)
 	* <img src="http://i.imgur.com/RiP5gwe.gif" />
 * Playing [html5 flappy bird](http://hyspace.io/flappy/)
 	* <img src="http://i.imgur.com/X0folHz.gif" width="300px" />

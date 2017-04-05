@@ -1,13 +1,8 @@
 #!/bin/sh
 
-# Copy to PiTFT if available
+udevd &
+udevadm trigger
+
 fbcp &
 
-export XDG_RUNTIME_DIR=/run
-export WAYLAND_DISPLAY=wayland-0
-
-westeros-init &
-
-URL=${URL:-"http://www.nyan.cat/original"}
-
-WPELauncher $URL
+WPE_BCMRPI_TOUCH=1 WPELauncher $URL

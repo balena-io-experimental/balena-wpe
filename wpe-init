@@ -5,4 +5,4 @@ udevadm trigger
 
 fbcp &
 
-WPE_BCMRPI_TOUCH=1 WPELauncher $URL
+WPE_BCMRPI_TOUCH=1 WPELauncher $WPE_URL

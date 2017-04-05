@@ -49,11 +49,11 @@ accelerated graphics. You can set only one of the following if you know how
 much RAM your Pi has or you can set all of them and your Pi will autoselect
 based on its memory. **If you don't set any of these, WPE won't work.**
 
-| Key                             | Value
-|---------------------------------|------
-|`RESIN_HOST_CONFIG_gpu_mem_256`  | `128`
-|`RESIN_HOST_CONFIG_gpu_mem_512`  | `196`
-|`RESIN_HOST_CONFIG_gpu_mem_1024` | `396`
+| Key                                 | Value
+|-------------------------------------|----------
+|**`RESIN_HOST_CONFIG_gpu_mem_256`**  | **`128`**
+|**`RESIN_HOST_CONFIG_gpu_mem_512`**  | **`196`**
+|**`RESIN_HOST_CONFIG_gpu_mem_1024`** | **`396`**
 
 ### Displaying an an HDMI screen
 
@@ -63,10 +63,10 @@ you want to do, you might find the performance at FullHD resolution isn't
 enough. In that case you can force the HDMI to 720p by adding the following
 fleet configuration variables:
 
-| Key                           | Value
-|-------------------------------|------
-|`RESIN_HOST_CONFIG_hdmi_group` | `1`
-|`RESIN_HOST_CONFIG_hdmi_mode`  | `4`
+| Key                               | Value
+|-----------------------------------|--------
+|**`RESIN_HOST_CONFIG_hdmi_group`** | **`1`**
+|**`RESIN_HOST_CONFIG_hdmi_mode`**  | **`4`**
 
 ### Displaying on a PiTFT 2.8"
 
@@ -84,12 +84,12 @@ the HDMI output to be 320x240, our native resolution. You can do this with the
 following variables. If don't set those, the Pi will render on a higher
 resolution and then scale down the image to fit the Pi screen.
 
-| Key                                   | Value
-|---------------------------------------|-------------------------------
-|`RESIN_HOST_CONFIG_hdmi_force_hotplug` | `1`
-|`RESIN_HOST_CONFIG_hdmi_group`         | `2`
-|`RESIN_HOST_CONFIG_hdmi_mode`          | `87`
-|`RESIN_HOST_CONFIG_hdmi_cvt`           | `hdmi_cvt=320 240 60 1 0 0 0`
+| Key                                       | Value
+|-------------------------------------------|----------------------------------
+|**`RESIN_HOST_CONFIG_hdmi_force_hotplug`** | **`1`**
+|**`RESIN_HOST_CONFIG_hdmi_group`**         | **`2`**
+|**`RESIN_HOST_CONFIG_hdmi_mode`**          | **`87`**
+|**`RESIN_HOST_CONFIG_hdmi_cvt`**           | **`hdmi_cvt=320 240 60 1 0 0 0`**
 
 #### Capacitive touchscreen
 
@@ -97,21 +97,21 @@ resolution and then scale down the image to fit the Pi screen.
 supported out of the box on resin.io. If your screen says "FT6206" at the back,
 it's probably one of those.
 
-| Key                                   | Value
-|---------------------------------------|----------------------------------------------------
-|`RESIN_HOST_CONFIG_dtoverlay`          | `pitft28-capacitive,rotate=90,speed=62000000,fps=60`
+| Key                              | Value
+|----------------------------------|--------------------------------------------------------
+|**`RESIN_HOST_CONFIG_dtoverlay`** | **`pitft28-capacitive,rotate=90,speed=62000000,fps=60`**
 
 #### Resistive touchscreen
 
-| Key                                   | Value
-|---------------------------------------|----------------------------------------------------
-|`RESIN_HOST_CONFIG_dtoverlay`          | `pitft28-resistive,rotate=90,speed=62000000,fps=60`
+| Key                              | Value
+|----------------------------------|--------------------------------------------------------
+|**`RESIN_HOST_CONFIG_dtoverlay`** | **`pitft28-resistive,rotate=90,speed=62000000,fps=60`**
 
 ## Controlling content
 
 ### Loading a URL
 
-To configure the URL displayed by webkit, set the `WPE_URL` environment
+To configure the URL displayed by webkit, set the **`WPE_URL`** environment
 variable. The default value is [Youtube TV](http://www.youtube.com/tv)
 
 ### Offline content
@@ -132,9 +132,9 @@ To enable the mouse cursor you have to set the following environment variable.
 Keep in mind that there are some known issues with mouse support when the
 webpage includes iframes.
 
-| Key                | Value
-|--------------------|-------
-|`WPE_BCMRPI_CURSOR` | `1`
+| Key                    | Value
+|------------------------|---------
+|**`WPE_BCMRPI_CURSOR`** | **`1`**
 
 ## Known Issues
 

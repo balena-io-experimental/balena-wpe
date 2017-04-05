@@ -17,7 +17,8 @@ accelerated CSS, WebGL, and HTML5 video.
 ## Table of contents
 
 * [Table of contents](#table-of-contents)
-* [Installation](#installation)
+* [Getting started](#getting-started)
+* [Configuration](#configuration)
     * [Displaying on an HDMI screen](#displaying-to-an-hdmi-screen)
     * [Displaying on a PiTFT 2.8"](#displaying-to-pitft-28)
 		* [Capacitive touchscreen](#capacitive-touchscreen)
@@ -27,7 +28,16 @@ accelerated CSS, WebGL, and HTML5 video.
 	* [Offline content](#offline-content)
 	* [Enabling mouse](#enabling-mouse)
 
-## Installation
+## Getting started
+
+* Sign up on [resin.io](https://dashboard.resin.io/signup)
+* Go through the [getting started guide](http://docs.resin.io/raspberrypi/nodejs/getting-started/) and create a new application
+* Clone this repository to your local workspace
+* Add the _resin remote_ to your local workspace using the useful shortcut in the dashboard UI ![remoteadd](http://i.imgur.com/no1DNSx.png)
+* `git push resin master`
+* See the magic happening, your device is getting updated Over-The-Air!
+
+## Configuration
 
 A lot of the configuration of this project is about setting up `config.txt`.
 The way you do this on resin.io is by setting some special fleet configuration

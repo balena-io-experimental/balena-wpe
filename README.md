@@ -85,11 +85,11 @@ following variables. If don't set those, the Pi will render on a higher
 resolution and then scale down the image to fit the Pi screen.
 
 | Key                                       | Value
-|-------------------------------------------|----------------------------------
+|-------------------------------------------|-------------------------
 |**`RESIN_HOST_CONFIG_hdmi_force_hotplug`** | **`1`**
 |**`RESIN_HOST_CONFIG_hdmi_group`**         | **`2`**
 |**`RESIN_HOST_CONFIG_hdmi_mode`**          | **`87`**
-|**`RESIN_HOST_CONFIG_hdmi_cvt`**           | **`hdmi_cvt=320 240 60 1 0 0 0`**
+|**`RESIN_HOST_CONFIG_hdmi_cvt`**           | **`320 240 60 1 0 0 0`**
 
 #### Capacitive touchscreen
 

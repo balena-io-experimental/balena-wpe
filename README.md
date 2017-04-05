@@ -55,7 +55,7 @@ based on its memory. **If you don't set any of these, WPE won't work.**
 |**`RESIN_HOST_CONFIG_gpu_mem_512`**  | **`196`**
 |**`RESIN_HOST_CONFIG_gpu_mem_1024`** | **`396`**
 
-### Displaying an an HDMI screen
+### Displaying on an HDMI screen
 
 WPE will display to the primary framebuffer (HDMI output) by default. If you
 don't set the resolution, it will be autodetected on boot up. Depending on what

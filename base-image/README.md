@@ -18,8 +18,8 @@ git submodule init
 git submodule update
 ```
 
-Now you're ready to go. Simply run **`./build.sh`** and it will fireup a Yocto
-build. You're environment needs to have the `python` executable be a Python 2
+Now you're ready to go. Simply run **`./build.sh`** and it will fire up a Yocto
+build. Your environment needs to have the `python` executable be a Python 2
 interpreter. If you're running on a distribution which defaults to Python 3
 consider using [virtualenv](https://virtualenv.pypa.io/en/stable/).
 

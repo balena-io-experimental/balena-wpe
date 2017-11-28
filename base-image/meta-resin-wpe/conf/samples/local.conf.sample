@@ -22,3 +22,6 @@ USER_CLASSES ?= "buildstats image-mklibs image-prelink"
 PATCHRESOLVE = "noop"
 
 CONF_VERSION = "1"
+
+DISTRO_FEATURES_remove = "x11"
+DISTRO_FEATURES_append = " opengl"

@@ -1,4 +1,4 @@
-FROM petrosagg/resin-wpe:raspberrypi3-9416a43
+FROM petrosagg/resin-wpe:raspberrypi3-06da0ed
 
 COPY udev-rules/ /etc/udev/rules.d/
 

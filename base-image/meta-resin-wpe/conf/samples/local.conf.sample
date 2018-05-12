@@ -25,3 +25,6 @@ CONF_VERSION = "1"
 
 DISTRO_FEATURES_remove = "x11"
 DISTRO_FEATURES_append = " opengl"
+
+WPE_BACKEND = "rpi libinput"
+WPE_PLATFORM = "egl"

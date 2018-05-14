@@ -9,7 +9,7 @@ accelerated CSS, WebGL, and HTML5 video.
 
 * Rendering WebGL [abstract shapes](https://mrdoob.neocities.org/023/)
 	* <img src="http://i.imgur.com/RiP5gwe.gif" />
-* Playing [html5 flappy bird](http://hyspace.io/flappy/)
+* Playing [html5 flappy bird](https://nebezb.com/floppybird/)
 	* <img src="http://i.imgur.com/X0folHz.gif" width="300px" />
 * Playing HD video on [YoutubeTV](https://youtube.com/tv)
 	* <img src="http://i.imgur.com/wpRygCt.gif" />

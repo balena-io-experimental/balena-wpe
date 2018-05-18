@@ -42,7 +42,7 @@ accelerated CSS, WebGL, and HTML5 video.
 A lot of the configuration of this project is about setting up `config.txt`.
 The way you do this on resin.io is by setting some special fleet configuration
 variables. If you don't know how to do this, you can [find more info
-here](https://docs.resin.io/configuration/advanced/#modifying-config-txt-remotely-).
+here](https://docs.resin.io/configuration/advanced/#modifying-config-txt-remotely).
 
 First, we need to set the GPU memory to something suitable for hardware
 accelerated graphics. You can set only one of the following if you know how

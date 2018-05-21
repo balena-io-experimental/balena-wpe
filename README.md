@@ -23,6 +23,7 @@ accelerated CSS, WebGL, and HTML5 video.
     * [Displaying on a PiTFT 2.8"](#displaying-to-pitft-28)
 		* [Capacitive touchscreen](#capacitive-touchscreen)
 		* [Resistive touchscreen](#resistive-touchscreen)
+    * [Sound configuration](#sound-configuration)
 * [Controlling content](#controlling-content)
 	* [Loading a URL](#loading-a-url)
 	* [Offline content](#offline-content)
@@ -106,6 +107,20 @@ it's probably one of those.
 | Key                              | Value
 |----------------------------------|--------------------------------------------------------
 |**`RESIN_HOST_CONFIG_dtoverlay`** | **`pitft28-resistive,rotate=90,speed=62000000,fps=60`**
+
+### Sound configuration
+
+WPE will normally try to select an appropriate audio sink to output to.
+However, if you want to force a specific output to be used you can set the
+**`WPE_GSTREAMER_AUDIO_SINK`** environment variable according to the following
+table:
+
+| Value                   | Notes
+|-------------------------|--------------------------------------
+|**`autoaudiosink`**      | Automatically select output (default)
+|**`omxhdmiaudiosink`**   | Outputs sound over HDMI
+|**`omxanalogaudiosink`** | Outputs to the 3.5mm jack
+|**`alsasink`**           | Outputs using alsa (EXPERIMENTAL)
 
 ## Controlling content
 

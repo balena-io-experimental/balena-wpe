@@ -150,7 +150,3 @@ webpage includes iframes.
 | Key                    | Value
 |------------------------|---------
 |**`WPE_BCMRPI_CURSOR`** | **`1`**
-
-## Known Issues
-
-* Sound is only output through HDMI

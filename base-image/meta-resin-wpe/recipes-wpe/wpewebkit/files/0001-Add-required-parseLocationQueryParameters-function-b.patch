@@ -1,0 +1,36 @@
+From 8e7305ba4136517fce740af9e6cec306d62dd2bb Mon Sep 17 00:00:00 2001
+From: Gergely Imreh <imrehg@gmail.com>
+Date: Mon, 4 Jun 2018 11:42:44 +0100
+Subject: [PATCH] Add required parseLocationQueryParameters function back
+
+The parseLocationQueryParameters function was removed in commit
+db7197fcca60d5c1e8d146558da7fbdc7a9a670c but it's still in use
+in `Main.js`, and the WebInspector interface does not load properly
+if that function is missing.
+
+Signed-off-by: Juan Cruz Viotti <jv@jviotti.com>
+Signed-off-by: Gergely Imreh <imrehg@gmail.com>
+---
+ Source/WebInspectorUI/UserInterface/Base/URLUtilities.js | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/Source/WebInspectorUI/UserInterface/Base/URLUtilities.js b/Source/WebInspectorUI/UserInterface/Base/URLUtilities.js
+index bc93298642a..6ae0c9d8bfc 100644
+--- a/Source/WebInspectorUI/UserInterface/Base/URLUtilities.js
++++ b/Source/WebInspectorUI/UserInterface/Base/URLUtilities.js
+@@ -186,6 +186,12 @@ function absoluteURL(partialURL, baseURL)
+     return baseURLPrefix + resolveDotsInPath(basePath + partialURL);
+ }
+ 
++function parseLocationQueryParameters(arrayResult)
++{
++    // The first character is always the "?".
++    return parseQueryString(window.location.search.substring(1), arrayResult);
++}
++
+ function parseQueryString(queryString, arrayResult)
+ {
+     if (!queryString)
+-- 
+2.17.1
+

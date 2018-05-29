@@ -13,8 +13,10 @@ IMAGE_INSTALL_append += " \
 	gstreamer1.0-plugins-base-alsa \
 	wpebackend \
 	wpebackend-rdk \
-	wpelauncher \
+	wpeframework \
+	wpeframework-plugins \
 	wpewebkit \
+	wpewebkit-web-inspector-plugin \
 	"
 
 VIRTUAL-RUNTIME_init_manager="busybox"

@@ -1,0 +1,44 @@
+From a727f288bbe53a458297cce6527e0ea05c363b97 Mon Sep 17 00:00:00 2001
+From: Gergely Imreh <imrehg@gmail.com>
+Date: Mon, 4 Jun 2018 12:00:00 +0100
+Subject: [PATCH] Workaround to use correct WebInspector resource paths
+
+The required WebInspector resources are shipped in `libWPEWebInspectorResources.so`,
+but the WebInspectorServer incorrectly assumes that all the resource paths
+are `/org/wpe/inspector/Userinterface`. In fact, the actual interface
+is shipped with a different path.
+```
+...
+InspectorGResourceBundle   2514 c /org/webkitgtk/inspector/UserInterface/Main.html
+WebKit2InspectorGResourceBundle   1395 u /org/wpe/inspector/UserInterface/inspectorPageIndex.html
+```
+
+This workaround corrects the workaround for the case when WPE is
+compiled with pretty basic settings in `meta-wpe`, by hardcoding
+the relevant paths for that resource compilation.
+
+Signed-off-by: Gergely Imreh <imrehg@gmail.com>
+---
+ .../UIProcess/InspectorServer/wpe/WebInspectorServerWPE.cpp | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/Source/WebKit/UIProcess/InspectorServer/wpe/WebInspectorServerWPE.cpp b/Source/WebKit/UIProcess/InspectorServer/wpe/WebInspectorServerWPE.cpp
+index 8bd1f18496f..0e733b340bc 100644
+--- a/Source/WebKit/UIProcess/InspectorServer/wpe/WebInspectorServerWPE.cpp
++++ b/Source/WebKit/UIProcess/InspectorServer/wpe/WebInspectorServerWPE.cpp
+@@ -65,7 +65,11 @@ bool WebInspectorServer::platformResourceForPath(const String& path, Vector<char
+     loadResourcesIfNeeded();
+ 
+     // Point the default path to a formatted page that queries the page list and display them.
+-    CString resourcePath = makeString("/org/wpe/inspector/UserInterface", (path == "/" ? "/inspectorPageIndex.html" : path)).utf8();
++    // Point the default path to a formatted page that queries the page list and display them.
++    CString resourcePath = path == "/" || path == "/inspectorPageIndex.html"
++      ? makeString("/org/wpe/inspector/UserInterface", "/inspectorPageIndex.html").utf8()
++      : makeString("/org/webkitgtk/inspector/UserInterface", path).utf8();
++
+     if (resourcePath.isNull())
+         return false;
+ 
+-- 
+2.17.1
+

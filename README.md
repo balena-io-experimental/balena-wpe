@@ -31,8 +31,8 @@ accelerated CSS, WebGL, and HTML5 video.
 
 ## Getting started
 
-* Sign up on [balena](https://dashboard.balena.io/signup)
-* Go through the [getting started guide](http://docs.balena.io/raspberrypi/nodejs/getting-started/) and create a new application
+* Sign up on [balena](https://dashboard.balena-cloud.io/signup)
+* Go through the [getting started guide](http://balena.io/docs/raspberrypi/nodejs/getting-started/) and create a new application
 * Clone this repository to your local workspace
 * Add the _balena remote_ to your local workspace using the useful shortcut in the dashboard UI ![remoteadd](http://i.imgur.com/no1DNSx.png)
 * `git push balena master`
@@ -43,7 +43,7 @@ accelerated CSS, WebGL, and HTML5 video.
 A lot of the configuration of this project is about setting up `config.txt`.
 The way you do this on balena is by setting some special fleet configuration
 variables. If you don't know how to do this, you can [find more info
-here](https://docs.balena.io/configuration/advanced/#modifying-config-txt-remotely).
+here](https://balena.io/docs/configuration/advanced/#modifying-config-txt-remotely).
 
 First, we need to set the GPU memory to something suitable for hardware
 accelerated graphics. You can set only one of the following if you know how

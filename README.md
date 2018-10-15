@@ -31,7 +31,7 @@ accelerated CSS, WebGL, and HTML5 video.
 
 ## Getting started
 
-* Sign up on [balena](https://dashboard.balena-cloud.io/signup)
+* Sign up on [balena](https://dashboard.balena-cloud.com/signup)
 * Go through the [getting started guide](http://balena.io/docs/raspberrypi/nodejs/getting-started/) and create a new application
 * Clone this repository to your local workspace
 * Add the _balena remote_ to your local workspace using the useful shortcut in the dashboard UI ![remoteadd](http://i.imgur.com/no1DNSx.png)

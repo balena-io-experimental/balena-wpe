@@ -31,19 +31,19 @@ accelerated CSS, WebGL, and HTML5 video.
 
 ## Getting started
 
-* Sign up on [resin.io](https://dashboard.resin.io/signup)
-* Go through the [getting started guide](http://docs.resin.io/raspberrypi/nodejs/getting-started/) and create a new application
+* Sign up on [balena](https://dashboard.balena.io/signup)
+* Go through the [getting started guide](http://docs.balena.io/raspberrypi/nodejs/getting-started/) and create a new application
 * Clone this repository to your local workspace
-* Add the _resin remote_ to your local workspace using the useful shortcut in the dashboard UI ![remoteadd](http://i.imgur.com/no1DNSx.png)
-* `git push resin master`
+* Add the _balena remote_ to your local workspace using the useful shortcut in the dashboard UI ![remoteadd](http://i.imgur.com/no1DNSx.png)
+* `git push balena master`
 * See the magic happening, your device is getting updated Over-The-Air!
 
 ## Configuration
 
 A lot of the configuration of this project is about setting up `config.txt`.
-The way you do this on resin.io is by setting some special fleet configuration
+The way you do this on balena is by setting some special fleet configuration
 variables. If you don't know how to do this, you can [find more info
-here](https://docs.resin.io/configuration/advanced/#modifying-config-txt-remotely).
+here](https://docs.balena.io/configuration/advanced/#modifying-config-txt-remotely).
 
 First, we need to set the GPU memory to something suitable for hardware
 accelerated graphics. You can set only one of the following if you know how
@@ -95,7 +95,7 @@ resolution and then scale down the image to fit the Pi screen.
 #### Capacitive touchscreen
 
 **Warning:** The PiTFT based on the `ft6x06_ts` kernel module is not currently
-supported out of the box on resin.io. If your screen says "FT6206" at the back,
+supported out of the box on balena. If your screen says "FT6206" at the back,
 it's probably one of those.
 
 | Key                              | Value

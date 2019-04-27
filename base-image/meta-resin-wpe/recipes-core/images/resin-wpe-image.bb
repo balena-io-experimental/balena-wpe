@@ -6,7 +6,6 @@ IMAGE_INSTALL_append += " \
 	fbcp \
 	fontconfig \
 	fontconfig-utils \
-	sthttpd \
 	tslib-calibrate \
 	tslib-tests \
 	ttf-bitstream-vera \

@@ -10,8 +10,9 @@ BBLAYERS ?= " \
   ${TOPDIR}/../poky/meta-poky \
   ${TOPDIR}/../poky/meta-yocto-bsp \
   ${TOPDIR}/../meta-raspberrypi \
-  ${TOPDIR}/../meta-wpe \
+  ${TOPDIR}/../meta-webkit \
   ${TOPDIR}/../meta-resin-wpe \
+  ${TOPDIR}/../meta-gstreamer1.0 \
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-openembedded/meta-multimedia \
   ${TOPDIR}/../meta-openembedded/meta-python \

@@ -13,6 +13,9 @@ IMAGE_INSTALL_append += " \
 	wpebackend-rdk \
 	wpewebkit \
 	cog \
+	tzdata tzdata-misc tzdata-posix tzdata-right tzdata-africa \
+	tzdata-americas tzdata-antarctica tzdata-arctic tzdata-asia \
+	tzdata-atlantic tzdata-australia tzdata-europe tzdata-pacific \
 	"
 
 VIRTUAL-RUNTIME_init_manager="busybox"

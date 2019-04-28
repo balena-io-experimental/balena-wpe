@@ -5,4 +5,18 @@ udevadm trigger
 
 fbcp &
 
-WPE_BCMRPI_TOUCH=1 WPELauncher $WPE_URL
+# Writable directories. See documentation here:
+# https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+export HOME=/tmp/balena
+mkdir -p /tmp/balena/xdg_runtime
+chmod 0700 /tmp/balena/xdg_runtime
+export XDG_RUNTIME_DIR=/tmp/balena/xdg_runtime
+
+# Enable touch screen
+export WPE_BCMRPI_TOUCH=1
+
+# Start browser
+cog $WPE_URL &
+
+# Start Tohora
+./tohora 8080 cog

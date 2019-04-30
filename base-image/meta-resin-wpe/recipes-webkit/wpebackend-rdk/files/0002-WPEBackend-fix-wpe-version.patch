@@ -1,0 +1,31 @@
+From c275769547745e10b8fdb8bfb792d869c2469786 Mon Sep 17 00:00:00 2001
+From: Eric Stobbart <eric_stobbart@comcast.com>
+Date: Sun, 17 Mar 2019 14:04:57 -0700
+Subject: [PATCH] [cmake] find required WPE package
+
+---
+ cmake/FindWPE.cmake | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/cmake/FindWPE.cmake b/cmake/FindWPE.cmake
+index 7f4ffd2..a062481 100644
+--- a/cmake/FindWPE.cmake
++++ b/cmake/FindWPE.cmake
+@@ -29,7 +29,7 @@
+ # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+ find_package(PkgConfig)
+-pkg_check_modules(PC_WPE QUIET wpe-0.2)
++pkg_check_modules(PC_WPE QUIET wpe-1.0)
+ 
+ find_path(WPE_INCLUDE_DIRS
+     NAMES wpe/wpe.h
+@@ -37,7 +37,7 @@ find_path(WPE_INCLUDE_DIRS
+ )
+ 
+ find_library(WPE_LIBRARIES
+-    NAMES wpe-0.2
++    NAMES wpe-1.0
+     HINTS ${PC_WPE_LIBDIR} ${PC_WPE_LIBRARY_DIRS}
+ )
+ 

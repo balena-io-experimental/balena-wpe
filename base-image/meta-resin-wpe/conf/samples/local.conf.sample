@@ -26,8 +26,7 @@ PATCHRESOLVE = "noop"
 
 CONF_VERSION = "1"
 
-DISTRO_FEATURES_remove = "x11"
-DISTRO_FEATURES_append = " opengl"
+DISTRO_FEATURES_append = " opengl wayland"
 
 # Install hardware acceleration codecs
 IMAGE_FEATURES_append = " hwcodecs"

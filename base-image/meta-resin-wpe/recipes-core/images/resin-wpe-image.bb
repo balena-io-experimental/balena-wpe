@@ -13,6 +13,7 @@ IMAGE_INSTALL_append += " \
 	wpebackend-rdk \
 	wpewebkit \
 	cog \
+	xkeyboard-config \
 	tzdata tzdata-misc tzdata-posix tzdata-right tzdata-africa \
 	tzdata-americas tzdata-antarctica tzdata-arctic tzdata-asia \
 	tzdata-atlantic tzdata-australia tzdata-europe tzdata-pacific \

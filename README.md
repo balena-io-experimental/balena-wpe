@@ -108,6 +108,13 @@ it's probably one of those.
 |----------------------------------|--------------------------------------------------------
 |**`RESIN_HOST_CONFIG_dtoverlay`** | **`pitft28-resistive,rotate=90,speed=62000000,fps=60`**
 
+#### Controlling backlight brightness
+
+If you have a Raspberry touchscreen, you can control the backlight brightness
+by setting the environment variable `RPI_BACKLIGHT` to a value in the range
+0-255. The default value is 255 (maximum brightness).
+
+
 ### Sound configuration
 
 WPE will normally try to select an appropriate audio sink to output to.

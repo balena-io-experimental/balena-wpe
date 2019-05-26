@@ -1,20 +1,20 @@
 [submodule "base-image/meta-openembedded"]
 	path = base-image/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-	branch = sumo
+	branch = warrior
 [submodule "base-image/poky"]
 	path = base-image/poky
 	url = git://git.yoctoproject.org/poky
-	branch = sumo
+	branch = warrior
 [submodule "base-image/meta-raspberrypi"]
 	path = base-image/meta-raspberrypi
 	url = git://git.yoctoproject.org/meta-raspberrypi
-	branch = sumo
-[submodule "base-image/meta-gstreamer1.0"]
-	path = base-image/meta-gstreamer1.0
-	url = https://github.com/OSSystems/meta-gstreamer1.0
-	branch = sumo
+	branch = warrior
+[submodule "base-image/meta-qt5"]
+	path = base-image/meta-qt5
+	url = https://github.com/meta-qt5/meta-qt5.git
+	branch = warrior
 [submodule "base-image/meta-webkit"]
 	path = base-image/meta-webkit
 	url = https://github.com/Igalia/meta-webkit
-	branch = sumo
+	branch = master

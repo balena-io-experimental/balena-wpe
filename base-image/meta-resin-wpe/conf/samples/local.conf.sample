@@ -3,6 +3,9 @@
 #MACHINE ?= "raspberrypi2"
 #MACHINE ?= "raspberrypi3"
 
+# Default policy config
+DISTRO ?= "poky"
+
 PREFERRED_PROVIDER_virtual/kernel_forcevariable = "linux-dummy"
 
 # Parallelism Options
@@ -23,8 +26,24 @@ PATCHRESOLVE = "noop"
 
 CONF_VERSION = "1"
 
-DISTRO_FEATURES_remove = "x11"
-DISTRO_FEATURES_append = " opengl"
+DISTRO_FEATURES_append = " opengl wayland"
 
-WPE_BACKEND = "rpi libinput"
-WPE_PLATFORM = "egl"
+# Install hardware acceleration codecs
+IMAGE_FEATURES_append = " hwcodecs"
+
+# Use proprietary Broadcom OpenGL drivers and wpebackend-rdk
+PREFERRED_PROVIDER_virtual/wpebackend = "wpebackend-rdk"
+PACKAGECONFIG_pn-wpebackend-rdk = "rpi"
+
+# Enable H.264 decoding in hardware
+IMAGE_INSTALL_append = " gstreamer1.0-omx"
+LICENSE_FLAGS_WHITELIST_append = " commercial"
+
+# Enable accelerated 2D HTML5 canvas
+PACKAGECONFIG_append_pn-cairo = " glesv2 egl"
+PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
+
+# Specify versions
+PREFERRED_VERSION_cog = "0.2.%"
+PREFERRED_VERSION_libwpe = "1.0.%"
+PREFERRED_VERSION_wpewebkit = "2.22.%"

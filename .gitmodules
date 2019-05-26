@@ -1,15 +1,20 @@
 [submodule "base-image/meta-openembedded"]
 	path = base-image/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-	branch = morty
+	branch = sumo
 [submodule "base-image/poky"]
 	path = base-image/poky
 	url = git://git.yoctoproject.org/poky
-	branch = morty
-[submodule "base-image/meta-wpe"]
-	path = base-image/meta-wpe
-	url = https://github.com/WebPlatformForEmbedded/meta-wpe
+	branch = sumo
 [submodule "base-image/meta-raspberrypi"]
 	path = base-image/meta-raspberrypi
 	url = git://git.yoctoproject.org/meta-raspberrypi
-	branch = morty
+	branch = sumo
+[submodule "base-image/meta-gstreamer1.0"]
+	path = base-image/meta-gstreamer1.0
+	url = https://github.com/OSSystems/meta-gstreamer1.0
+	branch = sumo
+[submodule "base-image/meta-webkit"]
+	path = base-image/meta-webkit
+	url = https://github.com/Igalia/meta-webkit
+	branch = sumo

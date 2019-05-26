@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 COMPATIBLE_MACHINE = "raspberrypi"
 
 SRCBRANCH = "master"
-SRCREV = "8087a71d0330a078d91aa78656684ab5313616c6"
+SRCREV = "af8d32246c23cb23e4030e6588668a14341f5ddc"
 
 SRC_URI = "\
     git://github.com/tasanakorn/rpi-fbcp.git;protocol=git;branch=${SRCBRANCH} \

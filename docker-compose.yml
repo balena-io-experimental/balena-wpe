@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  wpe:
+    restart: always
+    build: ./
+    privileged: true
+    ports:
+      - 8080:8080

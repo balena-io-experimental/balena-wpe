@@ -6,15 +6,17 @@ IMAGE_INSTALL_append += " \
 	fbcp \
 	fontconfig \
 	fontconfig-utils \
-	sthttpd \
 	tslib-calibrate \
 	tslib-tests \
 	ttf-bitstream-vera \
 	gstreamer1.0-plugins-base-alsa \
-	wpebackend \
 	wpebackend-rdk \
-	wpelauncher \
 	wpewebkit \
+	cog \
+	xkeyboard-config \
+	tzdata tzdata-misc tzdata-posix tzdata-right tzdata-africa \
+	tzdata-americas tzdata-antarctica tzdata-arctic tzdata-asia \
+	tzdata-atlantic tzdata-australia tzdata-europe tzdata-pacific \
 	"
 
 VIRTUAL-RUNTIME_init_manager="busybox"

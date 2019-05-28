@@ -1,5 +1,4 @@
-# Replace with a newer image
-# FROM petrosagg/resin-wpe:raspberrypi3-30c7465
+FROM petrosagg/balena-wpe:raspberrypi3-094d55a
 
 COPY udev-rules/ /etc/udev/rules.d/
 

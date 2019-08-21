@@ -41,9 +41,10 @@ LICENSE_FLAGS_WHITELIST_append = " commercial"
 
 # Enable accelerated 2D HTML5 canvas
 PACKAGECONFIG_append_pn-cairo = " glesv2 egl"
+PACKAGECONFIG_remove_pn-cairo = " opengl "
 PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
 
 # Specify versions
-PREFERRED_VERSION_cog = "0.2.%"
-PREFERRED_VERSION_libwpe = "1.0.%"
-PREFERRED_VERSION_wpewebkit = "2.22.%"
+PREFERRED_VERSION_cog = "0.3.%"
+PREFERRED_VERSION_libwpe = "1.2.%"
+PREFERRED_VERSION_wpewebkit = "2.24.%"

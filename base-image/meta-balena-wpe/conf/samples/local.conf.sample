@@ -2,6 +2,8 @@
 #MACHINE ?= "raspberrypi"
 #MACHINE ?= "raspberrypi2"
 #MACHINE ?= "raspberrypi3"
+#MACHINE ?= "raspberrypi3-64"
+#MACHINE ?= "raspberrypi4-64"
 
 # Default policy config
 DISTRO ?= "poky"

@@ -1,9 +1,7 @@
 # Supported machines
-#MACHINE ?= "raspberrypi"
-#MACHINE ?= "raspberrypi2"
 #MACHINE ?= "raspberrypi3"
-#MACHINE ?= "raspberrypi3-64"
-#MACHINE ?= "raspberrypi4-64"
+
+MACHINE_FEATURES_remove = "vc4graphics"
 
 # Default policy config
 DISTRO ?= "poky"

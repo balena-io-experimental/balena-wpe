@@ -47,5 +47,5 @@ PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
 # Specify versions
 PREFERRED_VERSION_cog = "0.3.%"
 PREFERRED_VERSION_libwpe = "1.2.%"
-PREFERRED_VERSION_wpewebkit = "2.24.2"
+PREFERRED_VERSION_wpewebkit = "2.24.%"
 

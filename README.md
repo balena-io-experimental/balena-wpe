@@ -150,7 +150,7 @@ ENV WPE_URL="file:///var/lib/public_html/index.html"
 
 ### Changing content at runtime
 
-balena-wpe ships with [tohora](https://github.com/mozz100/tohora/) so it provides a web interface for changing target URLs at runtime on port 8080
+balena-wpe ships with [tohora](https://github.com/mozz100/tohora/) so which provides a web interface for changing target URLs at runtime on port 8080
 
 ### Enabling mouse
 

@@ -16,7 +16,7 @@ fi
 export WPE_BCMRPI_TOUCH=1
 
 # Start browser
-cog $WPE_URL &
+cog --cookie-store=always $WPE_URL &
 
 # Start Tohora
 ./tohora 8080 cog

@@ -32,6 +32,7 @@ DISTRO_FEATURES_append = " opengl wayland"
 IMAGE_FEATURES_append = " hwcodecs"
 
 # Use proprietary Broadcom OpenGL drivers and wpebackend-rdk
+MACHINE_FEATURES_remove = "vc4graphics"
 PREFERRED_PROVIDER_virtual/wpebackend = "wpebackend-rdk"
 PACKAGECONFIG_pn-wpebackend-rdk = "rpi"
 
@@ -45,7 +46,7 @@ PACKAGECONFIG_remove_pn-cairo = " opengl"
 PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
 
 # Specify versions
-PREFERRED_VERSION_cog = "0.3.%"
-PREFERRED_VERSION_libwpe = "1.2.%"
-PREFERRED_VERSION_wpewebkit = "2.24.%"
+PREFERRED_VERSION_cog = "0.4.%"
+PREFERRED_VERSION_libwpe = "1.4.%"
+PREFERRED_VERSION_wpewebkit = "2.26.%"
 

@@ -1,7 +1,7 @@
 # WPE Webkit for the RaspberryPi
 
 This project provides an easy way of running [WPE
-Webkit](https://www.igalia.com/wpe/) for the RaspberryPi. WPEWebkit is a full
+Webkit](https://webkit.org/wpe/) for the Raspberry Pi. WPEWebkit is a full
 featured browser that takes advantage of the GPU to provide hardware
 accelerated CSS, WebGL, and HTML5 video.
 

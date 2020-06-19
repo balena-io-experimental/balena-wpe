@@ -12,7 +12,7 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-raspberrypi \
   ${TOPDIR}/../meta-webkit \
   ${TOPDIR}/../meta-resin-wpe \
-  ${TOPDIR}/../meta-gstreamer1.0 \
+  ${TOPDIR}/../meta-qt5 \
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-openembedded/meta-python \
   "

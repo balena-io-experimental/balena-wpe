@@ -46,7 +46,7 @@ PACKAGECONFIG_remove_pn-cairo = " opengl"
 PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
 
 # Specify versions
-PREFERRED_VERSION_cog = "0.4.%"
-PREFERRED_VERSION_libwpe = "1.4.%"
-PREFERRED_VERSION_wpewebkit = "2.26.%"
+PREFERRED_VERSION_cog = "0.6.%"
+PREFERRED_VERSION_libwpe = "1.6.%"
+PREFERRED_VERSION_wpewebkit = "2.28.%"
 

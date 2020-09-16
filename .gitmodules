@@ -10,10 +10,6 @@
 	path = base-image/meta-raspberrypi
 	url = git://git.yoctoproject.org/meta-raspberrypi
 	branch = dunfell
-[submodule "base-image/meta-qt5"]
-	path = base-image/meta-qt5
-	url = https://github.com/meta-qt5/meta-qt5.git
-	branch = dunfell
 [submodule "base-image/meta-webkit"]
 	path = base-image/meta-webkit
 	url = https://github.com/Igalia/meta-webkit

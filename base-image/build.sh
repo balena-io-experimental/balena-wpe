@@ -4,15 +4,15 @@ set -o errexit
 
 export MACHINE=${MACHINE:-raspberrypi3}
 
-export TEMPLATECONF="../meta-resin-wpe/conf/samples"
+export TEMPLATECONF="../meta-balena-wpe/conf/samples"
 source poky/oe-init-build-env build
 
-bitbake resin-wpe-image
+bitbake balena-wpe-image
 
 VERSION=$(git describe --dirty --always)
-IMAGE="resin-wpe:$MACHINE-$VERSION"
+IMAGE="balena-wpe:$MACHINE-$VERSION"
 
-docker import - $IMAGE < tmp/deploy/images/$MACHINE/resin-wpe-image-$MACHINE.tar.gz
+docker import - $IMAGE < tmp/deploy/images/$MACHINE/balena-wpe-image-$MACHINE.tar.gz
 
 echo
 echo "#####################################"

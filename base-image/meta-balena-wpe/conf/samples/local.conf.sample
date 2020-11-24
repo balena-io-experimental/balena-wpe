@@ -50,5 +50,5 @@ PACKAGECONFIG_remove_pn-cairo = " opengl"
 # Specify versions
 PREFERRED_VERSION_cog = "0.8.%"
 PREFERRED_VERSION_libwpe = "1.8.%"
-PREFERRED_VERSION_wpewebkit = "2.30.%"
+PREFERRED_VERSION_wpewebkit = "2.30.2"
 

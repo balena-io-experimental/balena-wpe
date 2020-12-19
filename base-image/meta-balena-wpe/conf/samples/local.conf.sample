@@ -34,16 +34,21 @@ IMAGE_FEATURES_append = " hwcodecs"
 # Use proprietary Broadcom OpenGL drivers and wpebackend-rdk
 PREFERRED_PROVIDER_virtual/wpebackend = "wpebackend-rdk"
 PACKAGECONFIG_pn-wpebackend-rdk = "rpi"
+MACHINE_FEATURES_remove = "vc4graphics"
+DISABLE_VC4GRAPHICS = "1"
 
 # Enable H.264 decoding in hardware
 IMAGE_INSTALL_append = " gstreamer1.0-omx"
 LICENSE_FLAGS_WHITELIST_append = " commercial"
 
-# Enable accelerated 2D HTML5 canvas
+# Enable accelerated 2D HTML5 canvas (cannot specify both glesv2 and opengl for cairo)
 PACKAGECONFIG_append_pn-cairo = " glesv2 egl"
-PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
+PACKAGECONFIG_remove_pn-cairo = " opengl"
+# The 2dcanvas option currently causes compilation of 2.30.0 to fail
+# PACKAGECONFIG_append_pn-wpewebkit = " 2dcanvas"
 
 # Specify versions
-PREFERRED_VERSION_cog = "0.2.%"
-PREFERRED_VERSION_libwpe = "1.0.%"
-PREFERRED_VERSION_wpewebkit = "2.22.%"
+PREFERRED_VERSION_cog = "0.8.%"
+PREFERRED_VERSION_libwpe = "1.8.%"
+PREFERRED_VERSION_wpewebkit = "2.30.4"
+

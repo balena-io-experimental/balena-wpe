@@ -11,8 +11,7 @@ BBLAYERS ?= " \
   ${TOPDIR}/../poky/meta-yocto-bsp \
   ${TOPDIR}/../meta-raspberrypi \
   ${TOPDIR}/../meta-webkit \
-  ${TOPDIR}/../meta-resin-wpe \
-  ${TOPDIR}/../meta-gstreamer1.0 \
+  ${TOPDIR}/../meta-balena-wpe \
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-openembedded/meta-python \
   "
